@@ -1,0 +1,83 @@
+/* GERAIS */
+body{ background:url(../img/pattern-body.jpg) center top repeat;}
+.wrap{ width:960px; height: auto; margin:0 auto;}
+
+/* TOPO */
+#topo { width:100%; padding:28px 0; background:url(../img/pattern-topo.jpg) repeat-x center top;}
+#topo h1{ margin:0;}
+#topo img{ margin:0 auto; display:block;}
+
+/* FOTO DO TOPO */
+#foto-topo { width:100%; background:url(../img/fotodestaque1.jpg) center top no-repeat;}
+#foto-topo .wrap{ overflow:hidden; height:490px;}
+#foto-topo.comvideo { width:100%; background:#000;}
+#foto-topo a{ display:block; text-decoration:none; cursor:pointer; width:100%; height:490px; float:left;}
+#foto-topo a span{ width:83px; height:83px; padding-top:14px; background:url(../img/play.png) top left no-repeat; display:block; padding:0; margin:200px auto;}
+#foto-topo a:hover span{ background-position:bottom left;}
+
+/* MENU */
+#menu { width:100%; background:url(../img/pattern-menu.jpg) #000 center top repeat-x; height:99px;}
+#menu #logo, #menu #logo2{ width:240px; float:left; padding-top:21px;}
+#menu #logo img, #menu #logo2 img{ display:block; margin:0 auto;}
+#menu a.menu{ width:202px; height:99px; line-height:99px; margin:0 18px; background:url(../img/bt-menu.jpg) top left no-repeat; float:left; color:#858585; font-weight:bold; font-size:20px; letter-spacing:-0.06em; text-decoration:none; text-align:center; text-shadow:1px 1px 1px #000;}
+#menu a.menu:hover, #menu a.menu.active{ background:url(../img/bt-menu.jpg) top right no-repeat; color:#fff;}
+#menu.qvoa{ position:fixed; top:0; z-index:1000; height:99px; display:none;}
+#menu.qvoa #logo2{ padding-top:32px;}
+
+/* APRESENTAÇÃO */
+#apresentacao { width:100%;}
+#apresentacao #col-esquerda{ width:440px; padding:0 20px; padding-top:90px; float:left;}
+#apresentacao #col-esquerda p{ font-family:Arial, Helvetica, sans-serif; font-size:44px; line-height:52px; letter-spacing:-0.06em; color:#333; font-weight:bold; margin:0 0 55px 0;}
+#apresentacao #col-esquerda p.destaque{ color:#ee3042;}
+#apresentacao .col-direita{ width:200px; padding:0 20px; padding-top:90px; float:left;}
+#apresentacao .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
+#apresentacao .col-direita p strong{ color:#ee3042; font-weight:normal;}
+#apresentacao .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
+#apresentacao #features{ width:100%; float:left; padding-bottom:40px;}
+#apresentacao #features h3{ width:920px; margin-left:20px; border-bottom:1px solid #333; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px;}
+#apresentacao #features h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
+#apresentacao #features .item{ width:200px; padding:0 20px; float:left;}
+#apresentacao #features .item img{ display:block; margin:30px auto;}
+#apresentacao #features .item h4{ color:#333; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; line-height:22px; text-align:center;}
+
+/* FAÇA UMA VISITA */
+#faca-visita { width:100%;}
+#faca-visita h3{ width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
+#faca-visita h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
+#faca-visita h3 a{ float:left; display:block; font-size:12px; font-weight:normal; color:#ee3042; padding-top:14px; margin-left:30px;}
+
+#faca-visita #slider{ position:relative;}
+#faca-visita #slider .slides_container { width:900px; height:493px; overflow:hidden; margin:0; padding:0; }
+#faca-visita #slider .slides_container div { width:900px; height:493px; display:block; }
+#faca-visita #slider .pagination{ position:absolute; bottom:20px; left:-27px; padding-left:50%;}
+#faca-visita #slider .pagination li{ float:left; list-style-type:none;}
+#faca-visita #slider .pagination li a{ display:block; width:12px; height:12px; float: left; background:url(../img/slider-nav.png) top left no-repeat; text-indent:-999999px; overflow:hidden; margin:3px;}
+#faca-visita #slider .pagination li.current a, #faca-visita #slider .pagination li a:hover{ background-position:top right;}
+
+/* PROJETOS */
+#projetos { width:100%; margin-bottom:50px;}
+#projetos #col-esquerda{ width:440px; padding:0 20px; padding-top:90px; float:left;}
+#projetos .col-esquerda img{ display:block; float:left; margin:0;}
+#projetos .col-direita{ width:200px; padding:0 20px; padding-top:90px; float:left;}
+#projetos .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
+#projetos .col-direita p strong{ color:#ee3042; font-weight:normal;}
+#projetos .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
+
+/* FALE CONOSCO */
+#fale-conosco { width:100%; position:relative; height:536px;}
+#fale-conosco .wrap{ height:43px; position:relative; z-index:100;}
+#fale-conosco h3{ width:920px; border-bottom:1px solid #333; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; position:absolute; top:0; left:20px; margin:0;}
+#fale-conosco h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
+#fale-conosco #mapa{ width:100%; height:492px; border-top:1px solid #666; position:absolute; top:43px; left:0; z-index:10;}
+#fale-conosco #info{ width:390px; padding:40px 0 20px 50px; background:url(../img/info-bg.png) center top repeat; position:absolute; top:43px; left:50%; margin-left:-460px; z-index:100}
+#fale-conosco #info div{ padding-bottom:20px; width:100%;}
+#fale-conosco #info img{ display:block; float:left;}
+#fale-conosco #info p{ float:left; color:#fff; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:26px; margin-left:20px;}
+#fale-conosco #info p a{ color:#fff;}
+#fale-conosco .gmnoprint{ display:none;}
+
+/* RODAPÉ */
+#rodape { width:100%; height:70px; padding-top:28px; background:url(../img/pattern-rodape.jpg) repeat-x center top;}
+#rodape img{ margin:0 auto; display:block;}
+#rodape p{ font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#fff; text-align:right; padding-top:20px; margin:0;}
+#rodape p a{ font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#fff; text-decoration:underline;}
