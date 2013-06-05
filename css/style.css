@@ -19,8 +19,13 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #menu { width:100%; background:url(../img/pattern-menu.jpg) #000 center top repeat-x; height:99px;}
 #menu #logo, #menu #logo2{ width:240px; float:left; padding-top:21px;}
 #menu #logo img, #menu #logo2 img{ display:block; margin:0 auto;}
-#menu a.menu{ width:202px; height:99px; line-height:99px; margin:0 18px; background:url(../img/bt-menu.jpg) top left no-repeat; float:left; color:#858585; font-weight:bold; font-size:20px; letter-spacing:-0.06em; text-decoration:none; text-align:center; text-shadow:1px 1px 1px #000;}
-#menu a.menu:hover, #menu a.menu.active{ background:url(../img/bt-menu.jpg) top right no-repeat; color:#fff;}
+#menu a.menu{ height:99px; line-height:99px; margin-left: -1px; background-position: top left; background-repeat: no-repeat; float:left; color:#858585; font-weight:bold; font-size:20px; letter-spacing:-0.06em; text-decoration:none; text-align:center; text-shadow:1px 1px 1px #000;}
+#menu a.menu:hover, #menu a.menu.active{ background-position: top right; color:#fff;}
+#menu a.menu.dl{ width:136px; background-image: url(../img/bt-menu-devicelab.jpg);}
+#menu a.menu.lp{ width:167px; background-image: url(../img/bt-menu-labprojects.jpg);}
+#menu a.menu.pesq{ width:143px; background-image: url(../img/bt-menu-pesquisas.jpg);}
+#menu a.menu.mid{ width:127px; background-image: url(../img/bt-menu-namidia.jpg);}
+#menu a.menu.fc{ width:113px; background-image: url(../img/bt-menu-contato.jpg);}
 #menu.qvoa{ position:fixed; top:0; z-index:1000; height:99px; display:none;}
 #menu.qvoa #logo2{ padding-top:32px;}
 
@@ -62,6 +67,28 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #projetos .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
 #projetos .col-direita p strong{ color:#ee3042; font-weight:normal;}
 #projetos .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
+
+/* PESQUISAS */
+#pesquisas{ width: 100%;}
+#pesquisas h3{ width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
+#pesquisas h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
+#pesquisas .content{ width: 100%; background-color: #333332;}
+#pesquisas .content img{padding: 31px 58px 31px 58px; float: left;}
+#pesquisas .content .info{ float: left; width: 440px; padding: 40px 20px 0 20px;}
+#pesquisas .content .chapeu{ float: left; width: 100%; color: #ee3042; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px; font-weight: normal;}
+#pesquisas .content h4{ float: left; margin: 0; padding: 0;}
+#pesquisas .content h4 .titulo{ float: left; width: 100%; color: #fff; font-family:Arial, Helvetica, sans-serif; font-size:20px; line-height: 32px; font-weight: bold; text-transform: uppercase;}
+#pesquisas .content h4 .descricao{ float: left; width: 100%; color: #fff; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px; font-weight: normal;}
+#pesquisas .content .data{ float: left; width: 100%; color: #7f7f7f; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 32px; font-weight: normal;}
+#pesquisas .content a.download{ float: left; width: 202px; height: 57px; padding: 0; margin: 48px 19px 10px 19px; text-indent: -9999999px; background: url(../img/bt-download.jpg) top left no-repeat; display: block;}
+#pesquisas .content a.download:hover{ background-position: bottom left;}
+#pesquisas .content p.info-download{ width: 202px; float: left; padding: 0 0 0 20px; margin: 0; text-align: left; color: #7f7f7f; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height: 14px; font-weight: normal;}
+
+/* NA MÍDIA */
+#na-midia{width: 100%;}
+#na-midia h3{width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
+#na-midia h3 span{float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
+#na-midia .content{ width: 100%; border-top: 1px solid #424242;}
 
 /* FALE CONOSCO */
 #fale-conosco { width:100%; position:relative; height:536px;}

@@ -1,0 +1,278 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conteudo",
+				"conteudo1"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"navega",
+				"navegacaoAbas"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"lo",
+				"Logo-Coppead-Rodape.jpg	w:192 h:191"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"b",
+				"br	Tag"
+			],
+			[
+				"re",
+				"resumo"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"ma",
+				"margin-left"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 9019,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/felipepvc/Sites/Coppead/aluno-turmanova.html",
+		"/Users/felipepvc/Sites/Coppead/aluno-turmaantiga.html",
+		"/Users/felipepvc/Sites/Coppead/style.css",
+		"/Users/felipepvc/Sites/Coppead/js/main.js",
+		"/Users/felipepvc/Sites/Coppead/Aluno-turmaAntiga.html",
+		"/Users/felipepvc/Sites/Coppead/index.html",
+		"/Users/felipepvc/Sites/Coppead/turma-antiga.html",
+		"/Users/felipepvc/Sites/Coppead/robots.txt",
+		"/Users/felipepvc/Sites/Coppead/README.md",
+		"/private/etc/hosts",
+		"/Volumes/HD Felipe/JOBS/Coppead/FrontEnd/style.css",
+		"/Volumes/HD Felipe/JOBS/Coppead/FrontEnd/index.html",
+		"/Users/felipepvc/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 9019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": false
+}
