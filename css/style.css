@@ -17,7 +17,7 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 
 /* MENU */
 #menu { width:100%; background:url(../img/pattern-menu.jpg) #000 center top repeat-x; height:99px;}
-#menu #logo, #menu #logo2{ width:240px; float:left; padding-top:21px;}
+#menu #logo, #menu #logo2{ width:260px; float:left; padding-top:21px;}
 #menu #logo img, #menu #logo2 img{ display:block; margin:0 auto;}
 #menu a.menu{ height:99px; line-height:99px; margin-left: -1px; background-position: top left; background-repeat: no-repeat; float:left; color:#858585; font-weight:bold; font-size:20px; letter-spacing:-0.06em; text-decoration:none; text-align:center; text-shadow:1px 1px 1px #000;}
 #menu a.menu:hover, #menu a.menu.active{ background-position: top right; color:#fff;}
@@ -85,10 +85,17 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #pesquisas .content p.info-download{ width: 202px; float: left; padding: 0 0 0 20px; margin: 0; text-align: left; color: #7f7f7f; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height: 14px; font-weight: normal;}
 
 /* NA MÍDIA */
-#na-midia{width: 100%;}
+#na-midia{width: 100%; margin: 60px 0;}
 #na-midia h3{width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
 #na-midia h3 span{float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
 #na-midia .content{ width: 100%; border-top: 1px solid #424242;}
+#na-midia .content .post{ float: left; width: 920px; margin-left: 20px; border-bottom: 1px solid #424242;}
+#na-midia .content .post img{ float: left; width: 200px;}
+#na-midia .content .post .info{ float: left; width: 680px; padding-left: 40px;}
+#na-midia .content .post .info span.chapeu{ float: left; width: 100%; color: #ee3042; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 24px; font-weight: normal; padding-top: 35px;}
+#na-midia .content .post .info h4 a{ float: left; width: 100%; color: #333; font-family:Arial, Helvetica, sans-serif; font-size:20px; line-height: 24px; font-weight: normal; text-decoration: none;}
+#na-midia .content .post .info h4 a:hover{ text-decoration: underline;}
+#na-midia .content .post .info span.data{ float: left; width: 100%; color: #666; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height: 32px; font-weight: normal;}
 
 /* FALE CONOSCO */
 #fale-conosco { width:100%; position:relative; height:536px;}

@@ -4,20 +4,64 @@
 		"selected_items":
 		[
 			[
-				"conteudo",
-				"conteudo1"
+				"tex",
+				"text-align"
 			],
 			[
-				"fade",
-				"fadeIn"
+				"text",
+				"text-indent"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"bt",
+				"bt-download.jpg	w:202 h:114"
+			],
+			[
+				"bac",
+				"background"
 			],
 			[
 				"marg",
 				"margin"
 			],
 			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
 				"mar",
-				"margin"
+				"margin-top"
+			],
+			[
+				"bt-",
+				"bt-menu-contato.jpg	w:226 h:99"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"conteudo",
+				"conteudo1"
+			],
+			[
+				"fade",
+				"fadeIn"
 			],
 			[
 				"navega",
@@ -40,10 +84,6 @@
 				"border-top"
 			],
 			[
-				"tex",
-				"text-decoration"
-			],
-			[
 				"fun",
 				"function"
 			],
@@ -62,10 +102,6 @@
 			[
 				"u",
 				"ul	Tag"
-			],
-			[
-				"p",
-				"padding-top"
 			],
 			[
 				"lo",
@@ -99,7 +135,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 9019,
+				"buffer_size": 10561,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 8726,
 				"line_ending": "Unix"
 			}
 		}
@@ -183,7 +227,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -191,15 +235,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 9019,
+						"buffer_size": 10561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7280,
+								7280
 							]
 						],
 						"settings":
@@ -209,7 +253,33 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1776.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 8726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6786,
+								6786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 809.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

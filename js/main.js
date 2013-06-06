@@ -70,15 +70,25 @@ function MenuDeAncoras(){
 function MarcaMenu(){
 	var apresentacaoH = $('#apresentacao').offset().top-101;
 	var projetosH = $('#projetos').offset().top-101;
+	var pesquisasH = $('#pesquisas').offset().top-130;
+	var namidiaH = $('#na-midia').offset().top-130;
 	var faleconoscoH = $('#fale-conosco').offset().top-130;
 	
 	if($(document).scrollTop() >= apresentacaoH && $(document).scrollTop() < projetosH){
 		$(".menu").removeClass('active');
 		$('.dl').addClass('active');
 	}
-	else if($(document).scrollTop() >= projetosH && $(document).scrollTop() < faleconoscoH){
+	else if($(document).scrollTop() >= projetosH && $(document).scrollTop() < pesquisasH){
 		$(".menu").removeClass('active');
 		$('.lp').addClass('active');
+	}
+	else if($(document).scrollTop() >= pesquisasH && $(document).scrollTop() < namidiaH){
+		$(".menu").removeClass('active');
+		$('.pesq').addClass('active');
+	}
+	else if($(document).scrollTop() >= namidiaH && $(document).scrollTop() < faleconoscoH){
+		$(".menu").removeClass('active');
+		$('.mid').addClass('active');
 	}
 	else if($(document).scrollTop() >= faleconoscoH){
 		$(".menu").removeClass('active');
