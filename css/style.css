@@ -31,10 +31,10 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 
 /* APRESENTAÇÃO */
 #apresentacao { width:100%;}
-#apresentacao #col-esquerda{ width:440px; padding:0 20px; padding-top:90px; float:left;}
+#apresentacao #col-esquerda{ width:440px; padding:0 20px; padding-top:150px; float:left;}
 #apresentacao #col-esquerda p{ font-family:Arial, Helvetica, sans-serif; font-size:44px; line-height:52px; letter-spacing:-0.06em; color:#333; font-weight:bold; margin:0 0 55px 0;}
 #apresentacao #col-esquerda p.destaque{ color:#ee3042;}
-#apresentacao .col-direita{ width:200px; padding:0 20px; padding-top:90px; float:left;}
+#apresentacao .col-direita{ width:200px; padding:0 20px; padding-top:150px; float:left;}
 #apresentacao .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
 #apresentacao .col-direita p strong{ color:#ee3042; font-weight:normal;}
 #apresentacao .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
@@ -60,16 +60,16 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #faca-visita #slider .pagination li.current a, #faca-visita #slider .pagination li a:hover{ background-position:top right;}
 
 /* PROJETOS */
-#projetos { width:100%; margin-bottom:50px;}
-#projetos #col-esquerda{ width:440px; padding:0 20px; padding-top:90px; float:left;}
+#projetos { width:100%;}
+#projetos #col-esquerda{ width:440px; padding:0 20px; padding-top:150px; float:left;}
 #projetos .col-esquerda img{ display:block; float:left; margin:0;}
-#projetos .col-direita{ width:200px; padding:0 20px; padding-top:90px; float:left;}
+#projetos .col-direita{ width:200px; padding:0 20px; padding-top:150px; float:left;}
 #projetos .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
 #projetos .col-direita p strong{ color:#ee3042; font-weight:normal;}
 #projetos .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
 
 /* PESQUISAS */
-#pesquisas{ width: 100%;}
+#pesquisas{ width: 100%; padding-top: 130px;}
 #pesquisas h3{ width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
 #pesquisas h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
 #pesquisas .content{ width: 100%; background-color: #333332;}
@@ -85,7 +85,7 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #pesquisas .content p.info-download{ width: 202px; float: left; padding: 0 0 0 20px; margin: 0; text-align: left; color: #7f7f7f; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height: 14px; font-weight: normal;}
 
 /* NA MÍDIA */
-#na-midia{width: 100%; margin: 60px 0;}
+#na-midia{width: 100%; padding-top: 130px;}
 #na-midia h3{width:920px; margin:0 0 0 20px; font-family:Arial, Helvetica, sans-serif; font-size:20px; height:43px; float:left;}
 #na-midia h3 span{float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
 #na-midia .content{ width: 100%; border-top: 1px solid #424242;}
@@ -108,6 +108,9 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #fale-conosco #info img{ display:block; float:left;}
 #fale-conosco #info p{ float:left; color:#fff; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:26px; margin-left:20px;}
 #fale-conosco #info p a{ color:#fff;}
+#fale-conosco #info a#facebook{ position: absolute; bottom: 39px; right: 45px; display: block;}
+#fale-conosco #info a#twitter{ position: absolute; bottom: 117px; right: 45px; display: block;}
+#fale-conosco #info a img{float: left;}
 #fale-conosco .gmnoprint{ display:none;}
 
 /* RODAPÉ */
