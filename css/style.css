@@ -4,11 +4,15 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 
 /* TOPO */
 #topo { width:100%; padding:28px 0; background:url(../img/pattern-topo.jpg) repeat-x center top;}
+#topo .wrap{ position: relative;}
 #topo h1{ margin:0;}
 #topo img{ margin:0 auto; display:block;}
+#topo #languages{ position: absolute; top: -28px; right: 20px; width: 110px;}
+#topo #languages a{ float: left; height: 20px; margin: 0; padding: 10px 0 10px 10px; text-decoration: none; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height: 20px; color: #ee2c43;}
+#topo #languages a:hover, #topo #languages a.active{  color: #fff;}
 
 /* FOTO DO TOPO */
-#foto-topo { width:100%; background:url(../img/fotodestaque1.jpg) center top no-repeat;}
+#foto-topo { width:100%; background:url(../img/fotodestaque1-eng.jpg) center top no-repeat;}
 #foto-topo .wrap{ overflow:hidden; height:490px;}
 #foto-topo.comvideo { width:100%; background:#000;}
 #foto-topo a{ display:block; text-decoration:none; cursor:pointer; width:100%; height:490px; float:left;}
@@ -19,6 +23,7 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #menu { width:100%; background:url(../img/pattern-menu.jpg) #000 center top repeat-x; height:99px;}
 #menu #logo, #menu #logo2{ width:260px; float:left; padding-top:21px;}
 #menu #logo img, #menu #logo2 img{ display:block; margin:0 auto;}
+#menu #logo2{ display: none;}
 #menu a.menu{ height:99px; line-height:99px; margin-left: -1px; background-position: top left; background-repeat: no-repeat; float:left; color:#858585; font-weight:bold; font-size:20px; letter-spacing:-0.06em; text-decoration:none; text-align:center; text-shadow:1px 1px 1px #000;}
 #menu a.menu:hover, #menu a.menu.active{ background-position: top right; color:#fff;}
 #menu a.menu.dl{ width:136px; background-image: url(../img/bt-menu-devicelab.jpg);}
@@ -51,6 +56,7 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #faca-visita h3 span{ float:left; width:auto; border-bottom:3px solid #333; line-height:40px;}
 #faca-visita h3 a{ float:left; display:block; font-size:12px; font-weight:normal; color:#ee3042; padding-top:14px; margin-left:30px;}
 
+#faca-visita #conteudo{ display:none;}
 #faca-visita #slider{ position:relative;}
 #faca-visita #slider .slides_container { width:900px; height:493px; overflow:hidden; margin:0; padding:0; }
 #faca-visita #slider .slides_container div { width:900px; height:493px; display:block; }
@@ -60,13 +66,21 @@ body{ background:url(../img/pattern-body.jpg) center top repeat;}
 #faca-visita #slider .pagination li.current a, #faca-visita #slider .pagination li a:hover{ background-position:top right;}
 
 /* PROJETOS */
-#projetos { width:100%;}
-#projetos #col-esquerda{ width:440px; padding:0 20px; padding-top:150px; float:left;}
-#projetos .col-esquerda img{ display:block; float:left; margin:0;}
-#projetos .col-direita{ width:200px; padding:0 20px; padding-top:150px; float:left;}
-#projetos .col-direita p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
-#projetos .col-direita p strong{ color:#ee3042; font-weight:normal;}
-#projetos .col-direita img{ display:block; float:left; margin:0 0 25px 0;}
+#projetos { width:100%; border-bottom: 1px solid #414141;}
+#projetos #nav{float: left; padding: 0; margin: 0;}
+#projetos #nav li{ list-style-type: none; float: left; padding-bottom: 20px;}
+#projetos #nav li a{ display: block; width: 200px; height: 46px; text-indent: -99999px; padding: 0; margin: 0 20px; background-position: center bottom; background-repeat: none; }
+#projetos #nav li#lp1 a{ background-image: url(../img/projetos/folha-dirigida.png);}
+#projetos #nav li#lp2 a{ background-image: url(../img/projetos/jwt.png);}
+#projetos #nav li#lp3 a{ background-image: url(../img/projetos/webmotors.png);}
+#projetos #nav li:hover, #projetos #nav li.active{border-bottom: 2px solid #414141;}
+#projetos #nav li:hover a, #projetos #nav li.active a{ background-position: center top;}
+#projetos .conteudo{ float: left; width: 100%; height: 450px; padding-top: 150px; display: none;}
+#projetos .conteudo.active{display: block;}
+#projetos .conteudo .col{ width:200px; padding:0 20px; float:left;}
+#projetos .conteudo .col p{ font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:30px; letter-spacing:-0.06em; color:#333; margin:0 0 25px 0;}
+#projetos .conteudo .col p strong{ color:#ee3042; font-weight:normal;}
+#projetos .conteudo .col img{ display:block; float:left; margin:0 0 25px 0;}
 
 /* PESQUISAS */
 #pesquisas{ width: 100%; padding-top: 130px;}

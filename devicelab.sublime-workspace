@@ -135,7 +135,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 10561,
+				"buffer_size": 14744,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,7 +143,18 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 8726,
+				"buffer_size": 9881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "//Carrega mapa do google\nfunction initialize() {\n	var mapDiv = document.getElementById('mapa');\n	var coordenadas = new google.maps.LatLng(-23.004250,-43.325294);\n	var map = new google.maps.Map(mapDiv, {\n		center: coordenadas,\n		zoom: 16,\n		scrollwheel: false,\n		\n		panControl: true,\n		panControlOptions: {\n			position: google.maps.ControlPosition.TOP_RIGHT\n		},\n		\n		zoomControl: true,\n		zoomControlOptions: {\n		  style: google.maps.ZoomControlStyle.SMALL,\n		  position: google.maps.ControlPosition.TOP_RIGHT\n		},\n		\n		scaleControl: false,\n		mapTypeId: google.maps.MapTypeId.ROADMAP,\n		disableDefaultUI: true\n	});\n	var marker = new google.maps.Marker({\n		position: coordenadas,\n		map: map,\n		icon: 'img/mapa-marcador.png',			\n		title:\"DeviceLab\"\n	});\n};\n\n//Exibir e esconder os controles do mapa\nfunction menuMapa(){\n	$(\"#fale-conosco\").hover(\n		function(){\n			$(\".gmnoprint\").fadeIn(\"fast\");\n		},\n		function(){\n			$(\".gmnoprint\").fadeOut(\"fast\");\n		}\n	);\n};\n		\n\n//Scrola a página para o conteúdo/id relacionado ao ítem de menu clicado\nfunction MenuDeAncoras(){\n	$('.menu, #logo2, #logo3').click(function(event){\n		event.preventDefault();\n		\n		var ancora = $(this).attr('href');\n		\n		$('.menu').removeClass('active');\n		$('html, body').stop().animate({\n			scrollTop: $(ancora).offset().top+10\n		}, 750,'easeInOutQuint');\n		$(this).addClass('active');\n	});\n};\n\n//Exibe e marca o menu de acordo com o conteúdo/id apresentado\nfunction MarcaMenu(){\n	var apresentacaoH = $('#apresentacao').offset().top;\n	var projetosH = $('#projetos').offset().top;\n	var pesquisasH = $('#pesquisas').offset().top;\n	var namidiaH = $('#na-midia').offset().top;\n	var faleconoscoH = $('#fale-conosco').offset().top;\n	\n	if($(document).scrollTop() >= apresentacaoH-99 && $(document).scrollTop() < projetosH){\n		$(\".menu\").removeClass('active');\n		$('.dl').addClass('active');\n		$('.qvoa').slideDown('fast');\n	}\n	else if($(document).scrollTop() >= projetosH && $(document).scrollTop() < pesquisasH){\n		$(\".menu\").removeClass('active');\n		$('.lp').addClass('active');\n		$('.qvoa').slideDown('fast');\n	}\n	else if($(document).scrollTop() >= pesquisasH && $(document).scrollTop() < namidiaH){\n		$(\".menu\").removeClass('active');\n		$('.pesq').addClass('active');\n		$('.qvoa').slideDown('fast');\n	}\n	else if($(document).scrollTop() >= namidiaH && $(document).scrollTop() < faleconoscoH){\n		$(\".menu\").removeClass('active');\n		$('.mid').addClass('active');\n		$('.qvoa').slideDown('fast');\n	}\n	else if($(document).scrollTop() >= faleconoscoH){\n		$(\".menu\").removeClass('active');\n		$('.fc').addClass('active');\n		$('.qvoa').slideDown('fast');\n	}\n	else if($(document).scrollTop() < apresentacaoH-99){\n		$(\".menu\").removeClass('active');\n		$('.qvoa').slideUp('fast');\n	}\n};\n\n\n//Exibe o vídeo do topo\nfunction mostraVideo(){\n	$('#mostra-video').click(function(e){\n		e.preventDefault();\n		\n		$('#mostra-video').fadeOut('fast');\n		$('#foto-topo').addClass('comvideo').find('.wrap').stop().animate({height: 540}, 750,'easeInOutQuint');\n		$('#foto-topo').children('.wrap').append('<iframe id=\"video\" src=\"http://player.vimeo.com/video/56758941?title=0&amp;byline=0&amp;portrait=0&amp;color=ee2c43&amp;autoplay=1\" width=\"960\" height=\"540\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')\n		carregaLegenda();\n	});\n};\n\n//Carrega a legenda do vídeo\nfunction carregaLegenda(){\n	$.ajax({ method: 'get', url: 'eng/subtitle.srt', success: parseSubtitles});\n\n	var subtitles = [] \n	function parseSubtitles(srt) \n	{ \n	   var records = srt.replace(/(\\r\\n|\\r|\\n)/g, '\\n').split('\\n\\n') \n	   var r = 0 \n	   $(records).each(function(i) \n	   { \n	     subtitles[r] = [] \n	     return (subtitles[r++] = records[i].split('\\n')) \n	   }) \n	}\n\n	var vimeoPlayer = $('#video')\n	Froogaloop(vimeoPlayer).addEvent('playProgress', onPlayProgress)\n\n	var subcount = 0 \n\n	function onPlayProgress(data) \n	{ \n	   var subtitle = []\n	   var seconds = Number(data.seconds).toFixed(1) \n	   var min = timecodeFrom(subtitles[subcount][1]) \n	   var max = timecodeTo(subtitles[subcount][1]) \n\n	   if (seconds > min && seconds < max) { subtitle = subtitles[subcount][2] }\n	   else if (seconds > max && subcount < (subtitles.length - 1)){ subcount++ } \n\n	   $('#subtitles').html(subtitle)\n	}\n\n	function timecodeFrom(timecode) \n	{\n	   var timecodePair = timecode.split(' —> ') \n	   return timecodeSeconds(timecodePair[0]) \n	} \n\n	function timecodeTo(timecode) \n	{ \n	   var timecodePair = timecode.split(' —> ') \n	   return timecodeSeconds(timecodePair[1]) \n	} \n\n	function timecodeSeconds(timecode) \n	{ \n	   var secs, timecode1, timecode2 \n	   timecode1 = timecode.split(',') \n	   timecode2 = timecode1[0].split(':') \n	   return (secs = Math.floor(timecode2[0] * 60 * 60) + Math.floor(timecode2[1] * 60) + Math.floor(timecode2[2])) \n	}				\n};\n\n//Slides de #faça uma visita\nfunction slider(){\n	var larguraViewport = $(window).width();\n	var pedacoDeCodigo = '<div class=\"slides_container\"><div class=\"tres\" style=\"background:url(img/slide1.jpg) center top no-repeat;\"></div><div class=\"dois\" style=\"background:url(img/slide2.jpg) center top no-repeat;\"></div><div class=\"um\" style=\"background:url(img/slide3.jpg) center top no-repeat;\"></div></div>';\n	\n	$(\"#slider\").empty().html(pedacoDeCodigo);\n	$(\".slides_container, .slides_container div\").width(larguraViewport);	\n	$(\"#slider\").slides({\n        effect: 'fade',\n		play: 5000,\n		fadeEasing: \"easeOutQuad\",\n		fadeSpeed: 150,\n		bigTarget: true\n      });\n};\n\n//Evento no analytics para os cliques no play do vídeo\nfunction playEventTracker(){\n	$('mostra-video').click( function(){\n		gaq.push(['_trackEvent', 'vídeo', 'visualizado']);\n	});\n};\n\n\n//Ao terminar de carregar todos os elementos da página\n$(document).ready(function() {\n	initialize();\n	MarcaMenu();\n	MenuDeAncoras();\n	//MenuQVoa();	\n	mostraVideo();\n	slider();\n	menuMapa();\n	playEventTracker();\n\n	//Ao scrollar a página\n	$(window).bind('scroll',function(e){\n		MarcaMenu();\n		//MenuQVoa();\n	});\n	\n	//Ao redimensionar a janela\n	$(window).resize(function() {\n		initialize();\n		slider();\n	});	\n	\n});",
+			"file": "js/main.js",
+			"file_size": 6095,
+			"file_write_time": 1371264541000000,
+			"settings":
+			{
+				"buffer_size": 6049,
 				"line_ending": "Unix"
 			}
 		}
@@ -227,7 +238,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -235,15 +246,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 10561,
+						"buffer_size": 14744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7280,
-								7280
+								14114,
+								14190
 							]
 						],
 						"settings":
@@ -253,7 +264,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1776.0,
+						"translation.y": 3968.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -263,15 +274,15 @@
 					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 8726,
+						"buffer_size": 9881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6786,
-								6786
+								8607,
+								8716
 							]
 						],
 						"settings":
@@ -279,7 +290,34 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 809.0,
+						"translation.y": 1044.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 6049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3864,
+								3864
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1844.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

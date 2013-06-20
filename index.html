@@ -25,6 +25,10 @@
         <div id="topo">
         	<div class="wrap">
                 <h1><img src="img/logo-devicelab-topo.png" width="248" height="46" alt="Device Lab"/></h1>
+                <div id="languages">
+                    <a href="http://devicelab.com.br/" class="active">Português</a>
+                    <a href="http://devicelab.com.br/eng/">English</a>
+                </div>
             </div>
         </div>
 
@@ -41,7 +45,12 @@
         <!-- MENU Início -->
         <div id="menu">
         	<div class="wrap">
-            	<a href="http://www.ginane.com.br" target="_blank" id="logo"><img src="img/logo-menu-ginane.png" width="99" height="61" alt="Grupo Ginane"/></a>
+                <a href="http://www.ginane.com.br" target="_blank" id="logo">
+                    <img src="../img/logo-menu-ginane.png" width="99" height="61" alt="Grupo Ginane"/>
+                </a>
+                <a href="#topo" id="logo2">
+                    <img src="../img/logo-menu-devicelab.png" width="161" height="30" alt="Device Lab">
+                </a>
                 <a href="#apresentacao" class="dl menu" title="Device Lab">deviceLab</a>
                 <a href="#projetos" class="lp menu" title="Lab Projescts">Lab Projects</a>
                 <a href="#pesquisas" class="pesq menu" title="Pesquisas">Pesquisas</a>
@@ -98,7 +107,11 @@
         	<div class="wrap">
                 <h3><span>Faça uma visita</span> <a href="#fale-conosco" title="Veja o mapa">ver mapa</a></h3>
             </div>
-            <div id="slider"></div>
+            <div id="conteudo">
+                <div class="tres" style="background:url(img/slide1.jpg) center top no-repeat;"></div>
+                <div class="dois" style="background:url(img/slide2.jpg) center top no-repeat;"></div>
+                <div class="um" style="background:url(img/slide3.jpg) center top no-repeat;"></div>
+            </div>
         </div>
         <!-- FAÇA UMA VISITA Fim -->
 
@@ -106,15 +119,58 @@
         <!-- PROJETOS Início -->
         <div id="projetos">
         	<div class="wrap">
-                <div id="col-esquerda">
-                	<img src="img/logo-webmotors.png" width="342" height="87" alt="webmotors"/>
+
+                <div id="folha-dirigida" class="conteudo active">   
+                    <div class="col">
+                        <img src="img/projetos/folha-dirigida-cor.png" height="36" width="200" alt="Folha Dirigida"/>
+                    </div>
+                    <div class="col">
+                        <p><strong>A Folha Dirigida Online conta, atualmente, com quase 3,5 milhões de usuários.</strong> No site do Grupo estão disponíveis diversos serviços. Desde a venda de apostilas, por meio da Livraria Dirigida, até provas, chats com professores, edições especiais, e aulas em vídeo, além de um noticiário diferenciado.</p>
+                    </div>
+                    <div class="col">
+                        <p>A Folha Dirigida <strong>precisava avaliar a experiência de seus usuários antes do lançamento oficial da nova Home do portal,</strong> para isso convidou a deviceLab para estudar em diferentes situações e contextos de uso a qualidade das interações na página principal. </p>                 
+                    </div>               
+                    <div class="col">
+                        <p>Após uma bateria intensa de testes, <strong>diversas situações insatisfatórias foram encontradas e modificadas</strong> para o lançamento da nova página.</p>                 
+                    </div>               
                 </div>
-                <div class="col-direita">
-                	<p>A <strong>WebMotors</strong> é o maior portal do país no segmento automobilístico. Atualmente são disponibilizados classificados para venda de veículos – <strong>com mais de 162 mil ofertas por mês</strong> –, programas de manutenção preventiva veicular e produtos específicos direcionados especialmente às Revendas de Veículos e empresas atuantes no segmento.</p>
+
+                <div id="jwt" class="conteudo">   
+                    <div class="col">
+                        <img src="img/projetos/jwt-cor.png" height="80" width="200" alt="Jwt"/>
+                    </div>
+                    <div class="col">
+                        <p>A <strong>JWT</strong> foi a primeira agência de publicidade internacional a estabelecer uma filial no Brasil. Foi também a primeira grande agência a incorporar a área digital em suas atividades diárias e a implantar o serviço de planejamento de canais de mercado.</p>
+                    </div>
+                    <div class="col">
+                        <p>A JWT precisava <strong>validar a experiência de uso do site de um dos seus maiores clientes</strong> em diferentes ambientes e convidou a deviceLab para <strong>identificar situações de uso insatisfatórias</strong> e <strong>realizar testes de carga para antecipar possíveis problemas em relação a quantidade de acessos</strong> e usuários simultâneos que o site receberia.</p>                 
+                    </div>               
+                    <div class="col">
+                        <p><strong>Em apenas 3 dias foram realizados todos os testes e entregue um relatório</strong> consolidado com diferentes situações que poderia prejudicar os resultados da ação caso as validações não fossem feitas.</p>                 
+                    </div>               
                 </div>
-                <div class="col-direita">
-                	<p>Fomos convidados pela WebMotors para<strong> avaliar o portal em mais de 60 ambientes</strong> e recomendar os principais ajustes para adequação em diferentes navegadores e devices.</p>                 
-                </div>            
+
+                <div id="webmotors" class="conteudo">   
+                    <div class="col">
+                        <img src="img/projetos/webmotors-cor.png" height="70" width="200" alt="webmotors"/>
+                    </div>
+                    <div class="col">
+                        <p>A <strong>WebMotors</strong> é o maior portal do país no segmento automobilístico.</p>
+                    </div>
+                    <div class="col">
+                        <p>Atualmente são disponibilizados classificados para venda de veículos – <strong>com mais de 162 mil ofertas por mês</strong> –, programas de manutenção preventiva veicular e produtos específicos direcionados especialmente às Revendas de Veículos e empresas atuantes no segmento.</p>                 
+                    </div>               
+                    <div class="col">
+                        <p>Fomos convidados pela WebMotors para<strong> avaliar o portal em mais de 60 ambientes</strong> e recomendar os principais ajustes para adequação em diferentes navegadores e devices.</p>                 
+                    </div>               
+                </div>
+
+                <ul id="nav">
+                    <li id="lp1" class="active"><a href="#folha-dirigida">Folha dirigida</a></li>
+                    <li id="lp2"><a href="#jwt">JWT</a></li>
+                    <li id="lp3"><a href="#webmotors">WebMotors</a></li>
+                </ul>
+
             </div>
         </div>
         <!-- PROJETOS Fim -->
@@ -136,8 +192,7 @@
                         </h4>
                         <span class="data">01.06.2013</span>   
                     </div>
-                    <a href="https://www.paywithatweet.com/pay/?id=8996ef1461c62d57d735a3d06f1723eb" class="download">Download</a>
-                    <p class="info-download">*Divulgue o estudo na sua timeline do Facebook ou Twitter para liberar o download</p>
+                    <a href="http://goo.gl/acZdu" class="download" target="_blank">Download</a>
                 </div>
             </div>
         </div>
@@ -243,21 +298,6 @@
             </div>
         </div>
         <!-- RODAPÉ Fim -->
-
-
-        <!-- MENU FLUTUANTE Início -->
-        <div id="menu" class="qvoa">
-        	<div class="wrap">
-            	<a href="#topo" id="logo2"><img src="img/logo-menu-devicelab.png" width="161" height="30" alt="Device Lab"/></a>
-                <a href="#apresentacao" class="dl menu" title="Device Lab">deviceLab</a>
-                <a href="#projetos" class="lp menu" title="Lab Projescts">Lab Projects</a>
-                <a href="#pesquisas" class="pesq menu" title="Pesquisas">Pesquisas</a>
-                <a href="#na-midia" class="mid menu" title="Na mídia">Na mídia</a>
-                <a href="#fale-conosco" class="fc menu" title="Fale conosco">Contato</a>
-            </div>
-        </div>
-        <!-- MENU FLUTUANTE Fim -->
-
         
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/vendor/jquery-1.8.3.min.js"></script>
@@ -265,6 +305,7 @@
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="js/plugins.js"></script>
         <script src="js/slides.min.jquery.js"></script>
+        <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
 		  var _gaq = _gaq || [];

@@ -58,6 +58,14 @@ function MenuDeAncoras(){
 	});
 };
 
+//Constrói o menu flutuante
+function MontaMenuQVoa(){
+	var menu = $('#menu').clone().addClass('qvoa');
+	$('#menu').after($(menu));
+	$('#menu.qvoa').find('#logo').hide();
+	$('#menu.qvoa').find('#logo2').show();
+}
+
 //Exibe e marca o menu de acordo com o conteúdo/id apresentado
 function MarcaMenu(){
 	var apresentacaoH = $('#apresentacao').offset().top;
@@ -106,24 +114,43 @@ function mostraVideo(){
 		$('#mostra-video').fadeOut('fast');
 		$('#foto-topo').addClass('comvideo').find('.wrap').stop().animate({height: 540}, 750,'easeInOutQuint');
 		$('#foto-topo').children('.wrap').append('<iframe id="video" src="http://player.vimeo.com/video/56758941?title=0&amp;byline=0&amp;portrait=0&amp;color=ee2c43&amp;autoplay=1" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
+		carregaLegenda();
 	});
 };
 
 //Slides de #faça uma visita
 function slider(){
 	var larguraViewport = $(window).width();
-	var pedacoDeCodigo = '<div class="slides_container"><div class="tres" style="background:url(img/slide1.jpg) center top no-repeat;"></div><div class="dois" style="background:url(img/slide2.jpg) center top no-repeat;"></div><div class="um" style="background:url(img/slide3.jpg) center top no-repeat;"></div></div>';
-	
-	$("#slider").empty().html(pedacoDeCodigo);
+	var slides = $("#conteudo").html();
+	var pedacoDeCodigo = '<div id="slider"><div class="slides_container">'+ slides +'</div></div>';
+	console.log(pedacoDeCodigo);
+
+	$("#slider").remove();
+	$("#conteudo").after(pedacoDeCodigo);
 	$(".slides_container, .slides_container div").width(larguraViewport);	
 	$("#slider").slides({
-        effect: 'fade',
+		effect: 'fade',
 		play: 5000,
 		fadeEasing: "easeOutQuad",
 		fadeSpeed: 150,
 		bigTarget: true
-      });
+	});
 };
+
+//navegar entre projetos
+function ProjetosNav(){
+	$('#projetos #nav a').click(function(e){
+		e.preventDefault();
+
+		$('#projetos #nav li').removeClass('active');
+		$(this).parent('li').addClass('active');
+
+		var target = $(this).attr('href');
+		$('#projetos .conteudo').fadeOut();
+		$('#projetos .conteudo').removeClass('active');
+		$(target).addClass('active').fadeIn();
+	})
+}
 
 //Evento no analytics para os cliques no play do vídeo
 function playEventTracker(){
@@ -136,18 +163,18 @@ function playEventTracker(){
 //Ao terminar de carregar todos os elementos da página
 $(document).ready(function() {
 	initialize();
+	MontaMenuQVoa();
 	MarcaMenu();
 	MenuDeAncoras();
-	//MenuQVoa();	
 	mostraVideo();
 	slider();
 	menuMapa();
 	playEventTracker();
+	ProjetosNav();
 
 	//Ao scrollar a página
 	$(window).bind('scroll',function(e){
 		MarcaMenu();
-		//MenuQVoa();
 	});
 	
 	//Ao redimensionar a janela
