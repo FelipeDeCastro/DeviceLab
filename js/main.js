@@ -113,7 +113,12 @@ function mostraVideo(){
 		
 		$('#mostra-video').fadeOut('fast');
 		$('#foto-topo').addClass('comvideo').find('.wrap').stop().animate({height: 540}, 750,'easeInOutQuint');
-		$('#foto-topo').children('.wrap').append('<iframe id="video" src="http://player.vimeo.com/video/56758941?title=0&amp;byline=0&amp;portrait=0&amp;color=ee2c43&amp;autoplay=1" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
+		if($('#foto-topo').hasClass('eng')){
+			$('#foto-topo').children('.wrap').append('<iframe id="video" src="http://player.vimeo.com/video/68955076?title=0&amp;byline=0&amp;portrait=0&amp;color=ee2c43&amp;autoplay=1" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+		}
+		else{
+			$('#foto-topo').children('.wrap').append('<iframe id="video" src="http://player.vimeo.com/video/56758941?title=0&amp;byline=0&amp;portrait=0&amp;color=ee2c43&amp;autoplay=1" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+		};
 		carregaLegenda();
 	});
 };
