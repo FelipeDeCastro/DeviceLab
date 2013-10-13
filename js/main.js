@@ -144,10 +144,10 @@ function slider(){
 
 //navegar entre projetos
 function ProjetosNav(){
-	$('#projetos #nav a').click(function(e){
+	$('.projetos-nav .nav a').click(function(e){
 		e.preventDefault();
 
-		$('#projetos #nav li').removeClass('active');
+		$('.projetos-nav .nav li').removeClass('active');
 		$(this).parent('li').addClass('active');
 
 		var target = $(this).attr('href');
